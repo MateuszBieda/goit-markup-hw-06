@@ -613,6 +613,7 @@ transform: translatey(0);
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
 
 }
 .modal{
@@ -625,6 +626,7 @@ transform: translatey(0);
   top:50%;
   left: 50%;
   transform:translate(-50%, -50%);
+  padding-bottom: 40px;
 }
 .close-btn{
   position:absolute;
@@ -695,11 +697,8 @@ transform: translatey(0);
   flex-direction: column;
   margin-left:40px;
 }
-.input-modal{
-  width:448px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
+
+
 .input-personal-data{
   margin-bottom:10px;
   height: 40px;
@@ -715,4 +714,101 @@ transform: translatey(0);
   font-weight: 400;
   line-height: 1.17;
   margin-bottom: 4px;
+}
+.modal-block{
+position:relative;
+
+}
+.icon-input{
+  position:absolute;
+  top:11px;
+  left:12px;
+  display: inline-block;
+  
+}
+.checkbox-block{
+  padding-left: 55px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+}
+.input-5{
+  display:inline-block ;
+  margin-right: 5px;
+  
+}
+.check-box{
+  width: 16px;
+  height: 15px;
+}
+.checkbox-paragraph{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color:rgba(117, 117, 117, 1);
+  display: inline-block;
+  height: 24x;
+}
+.checkbox-link{
+  color:rgba(33, 150, 243, 1);  
+  text-decoration: underline;
+  
+}
+.button-form{
+  display: flex;
+  justify-content: center;
+  /* margin-top:  30px; */
+}
+.button-modal-form{
+  background-color:  rgba(33, 150, 243, 1);
+  height:50px ;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color:rgba(255, 255, 255, 1);
+  border-style:none;
+  padding: 10px 76px 10px 76px;
+}
+.fieldset{
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  /* box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14); */
+  position: relative;
+  /* display:flex; */
+  /* flex-direction: row;
+  justify-content: center; */
+  padding-top: 12px;
+
+}
+.input-personal-data{
+  height:16px;
+  position: absolute;
+  top:12;
+  left:42px;
+  border-color: transparent;
+  border:0px  solid;
+  background-color: transparent;
+}
+.input-personal-data:focus{
+  outline-style:none;
+}
+.fieldset-comment{
+width:448px;
+height: 120px;
+position: relative;
+}
+.input-comment{
+  width:416px;
+height: 96px;
+position: absolute;
+top:12px;
+left:16px;
+border:0px solid ;
+}
+.input-comment:focus{
+  outline-style:none;
 }
