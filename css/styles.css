@@ -627,6 +627,11 @@ transform: translatey(0);
   left: 50%;
   transform:translate(-50%, -50%);
   padding-bottom: 40px;
+  opacity: inherit;
+  visibility: inherit;
+  transition-property: visibility, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn{
   position:absolute;
@@ -640,42 +645,7 @@ transform: translatey(0);
   border: none;
  
 }
-@keyframes modal-effects{
-  0% {
-    transform:scale(1);
-    transform:skew(0); 
-    opacity:1;
-  }
-  25%{
-    transform:scale(0.75);
-    transform:skew(12deg,12deg); 
-    opacity:0.75;
 
-  }
-  50%{
-    transform:scale(0.5);
-    transform:skew(20deg,20deg);
-    opacity:0.5;
-  }
-  75%{
-    transform:scale(0.75);
-    transform:skew(12deg,12deg); 
-    opacity:0.75;
-  }
-  100%{
-    transform:scale(1);
-    transform:skew(0);
-    opacity:1;
-  }
-}
-
-.backdrop:hover{
-  animation-name: modal-effects;
-  animation-play-state: running;
-  animation-duration: 1500ms;
-  animation-timing-function:linear;
-  animation-fill-mode:forwards;
-}
 .button-modal{
   border-radius: 50%;
   fill: rgba(0, 0, 0, 1);
