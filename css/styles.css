@@ -666,7 +666,6 @@ transform: translatey(0);
   height: 40px;
   border: solid rgba(33, 33, 33, 0.2) 1px;
   border-radius: 4px;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
   position:relative;
 }
 .fieldset-comment{
@@ -807,6 +806,7 @@ fill:rgba(33, 150, 243, 1);
   padding-top: 15px;
   padding-bottom: 15px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 1);
 }
 .label-footer{
   font-weight: 700;
